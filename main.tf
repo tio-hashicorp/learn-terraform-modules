@@ -19,8 +19,8 @@ provider "aws" {
 
 
 module "myhttp" {
-  source = "app.terraform.io/innovation-lab/myhttp"
-
+  source  = "app.terraform.io/innovation-lab/myhttp/http"
+  version = "0.0.3"
 }
 
 output "status_code" {
