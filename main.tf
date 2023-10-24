@@ -6,7 +6,7 @@ terraform {
       version = "~>1.0"
     }
     
-    myaws = {`
+    myaws = {
       source = "hashicorp/aws"
       version = "~>3.0"
     }
