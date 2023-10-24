@@ -9,6 +9,7 @@ terraform {
     myaws = {`
       source = "hashicorp/aws"
       version = "~>3.0"
+    }
   }
 }
 
