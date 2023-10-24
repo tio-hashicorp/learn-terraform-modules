@@ -5,17 +5,15 @@ terraform {
       source  = "hashicorp/http"
       version = "~>1.0"
     }
-
-    yourhttp = {
-      source  = "hashicorp/http"
-      version = "~>2.0"
-    }
-
-    ourhttp = {
-      source  = "hashicorp/http"
+    
+    myaws = {`
+      source = "hashicorp/aws"
       version = "~>3.0"
-    }
   }
+}
+
+provider myhttp {
+
 }
 
 module "myhttp" {
