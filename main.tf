@@ -1,7 +1,18 @@
 terraform {
   required_providers {
     myhttp = {
-      source  = "app.terraform.io/innoation-lab/myhttp"
+      source  = "app.terraform.io/innovation-lab/myhttp"
+      version = "~>1.0"
+    }
+
+    yourhttp = {`
+      source  = "app.terraform.io/innovation-lab/myhttp"
+      version = "~>2.0"
+    }
+
+    ourhttp = {`
+      source  = "hashicorp/http"
+      version = "~>3.0"
     }
   }
 }
