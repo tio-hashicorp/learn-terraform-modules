@@ -1,12 +1,13 @@
 terraform {
   required_providers {
     myhttp = {
-      source  = "app.terraform.io/innovation-lab/myhttp"
+#      source  = "app.terraform.io/innovation-lab/myhttp"
+      source  = "hashicorp/http"
       version = "~>1.0"
     }
 
     yourhttp = {
-      source  = "app.terraform.io/innovation-lab/myhttp"
+      source  = "hashicorp/http"
       version = "~>2.0"
     }
 
