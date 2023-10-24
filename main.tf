@@ -5,12 +5,12 @@ terraform {
       version = "~>1.0"
     }
 
-    yourhttp = {`
+    yourhttp = {
       source  = "app.terraform.io/innovation-lab/myhttp"
       version = "~>2.0"
     }
 
-    ourhttp = {`
+    ourhttp = {
       source  = "hashicorp/http"
       version = "~>3.0"
     }
