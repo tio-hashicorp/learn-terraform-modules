@@ -19,7 +19,7 @@ provider "aws" {
 
 
 module "myhttp" {
-  source = "./modules/terraform-myhttp"
+  source = "app.terraform.io/innovation-lab/myhttp/http"
 
 }
 
