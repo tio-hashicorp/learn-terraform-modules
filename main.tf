@@ -1,25 +1,23 @@
+
+/*
 terraform {
   required_providers {
-    myhttp = {
+    http = {
 #      source  = "app.terraform.io/innovation-lab/myhttp"
       source  = "hashicorp/http"
       version = "~>1.0"
     }
     
-    myaws = {
+    aws = {
       source = "hashicorp/aws"
       version = "~>3.0"
     }
   }
 }
-
-provider myhttp {
-
-}
+*/
 
 module "myhttp" {
-  source  = "app.terraform.io/innovation-lab/myhttp/http"
-#  version = "0.0.3"
+  source  = "../modules/terraform-http-myhttp"
 }
 
 output "status_code" {
