@@ -17,7 +17,8 @@ terraform {
 */
 
 module "myhttp" {
-  source  = "../modules/terraform-http-myhttp"
+  source  = "app.terraform.io/innovation-lab/myhttp/http"
+#  source  = "../modules/terraform-http-myhttp"
 }
 
 output "status_code" {
